@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRONTEND PROJECT</title>
+    <title>Symposium Registration</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Dark Theme Website</h1>
         <nav>
+            <h1>Symposium 2024</h1>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <section class="hero">
-            <h2>Welcome to the first Website</h2>
-            <p>Enjoy a modern, dark-themed web experience with vibrant highlights.</p>
-            <button>Get Started</button>
-        </section>
-    </main>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Symposium 2024</h2>
+            <p>Join us for an exciting event where innovation meets excellence. Register now to secure your spot!</p>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h2>Register Here</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">College Name:</label>
+                    <input type="text" id="college" placeholder="Enter your college name" required>
+                </div>
+                <div class="form-group">
+                    <label for="event">Select Event:</label>
+                    <select id="event" required>
+                        <option value="coding">Coding</option>
+                        <option value="CSS Battle">CSS Battle</option>
+                        <option value="hackathon">Hackathon</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:support@symposium2024.com">support@symposium2024.com</a></p>
+            <p>Phone: 9876657345</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Dark Theme Website. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Symposium 2024. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
